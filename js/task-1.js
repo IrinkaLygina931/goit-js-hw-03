@@ -14,12 +14,9 @@
 // console.log(makeTransaction(10, 500, 5000)); // "You ordered 10 droids worth 5000 credits!"
 
 
-  function slugify(title) {
-  let slug = title.toLowerCase().replace(/ /g, '-');
-  return slug;
-}
+
 function slugify(title) {
-  return title.toLowerCase().split(' ').join('mysite.com/posts/arrays-for-begginers');
+    return title.toLowerCase().split(' ').join('-');
 }
 
 console.log(slugify("Arrays for begginers")); // "arrays-for-begginers"
